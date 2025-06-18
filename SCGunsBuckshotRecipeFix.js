@@ -2,11 +2,5 @@
 
 ServerEvents.recipes( event => {
   event.remove({ id: 'scguns:buckshot' })
-  event.shapeless(
-    Item.of('scguns:buckshot', 6),
-    [
-      'minecraft:gunpowder',
-      '4x scguns:stan_bullet_tips'
-    ]
-  ).id('${id}_manual_only')
+  event.shapeless(buckshot.json).id(recipe.getId() + '_manual_only')
 })
