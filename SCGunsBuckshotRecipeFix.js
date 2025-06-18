@@ -9,5 +9,4 @@ event.shapeless(
       ]
     ).id('kubejs:buckshot_manual_only')
   event.remove({id: 'scguns:buckshot' })
-  })
 })
